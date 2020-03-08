@@ -1,0 +1,111 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+h2 {
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.item-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.item-list li{
+    width: 18%;
+    padding: 1%;
+    margin: 1%;
+    border: 1px solid #cccccc;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+}
+.item-list li p {
+    font-weight: 600;
+    font-size: 16px;
+}
+.btn {
+    background: #fee67c;
+    color: #000;
+    text-decoration: none;
+    padding: 5px 25px;
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+}
+.list-title {
+    float: left;
+}
+.cart-icon {
+    float: right;  
+    position: relative;  
+}
+.cart-icon img {
+    width: 40px
+}
+.cart-icon span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+}
+header {
+    overflow: hidden;
+    height: 60px;
+    border-bottom: 1px solid #fee67c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input.item-quantity {
+    width: 20px;
+    text-align: center;
+    pointer-events: none;
+}
+.qty-container label {
+    background: #ddd;
+    padding: 2.6px 5px;
+}
+.qty-container {
+    margin: 10px 0;
+    user-select: none;
+}
+.cart {
+    border: 1px solid #cccccc;
+}
+.cart > div {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    user-select: none;
+    
+}
+.cart p{
+    font-size: 20px;
+}
+.cart > div:nth-last-of-type(odd){
+    background-color: #f2f2f2;
+}
+input.cart-item-quantity {
+    text-align: center;
+    width: 30px;
+    height: 25px;
+    pointer-events: none;
+    user-select: none;
+}
+@media all and (max-width: 900px) {
+    .item-list li{
+        width: 48%;
+    }
+}
